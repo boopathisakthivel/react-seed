@@ -1,0 +1,9 @@
+/node_modules
+/build_dev
+/build_prod
+
+# IDE generated files
+.idea
+
+# MAC OS generated files
+.DS_Store

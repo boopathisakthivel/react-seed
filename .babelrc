@@ -1,0 +1,14 @@
+{
+  "presets": [
+    ["env", {
+      "es2015": {
+        "modules": false
+      }
+    }],
+    "react"
+  ],
+  "plugins": [
+    "react-hot-loader/babel",
+    ["babel-plugin-root-import"]
+  ]
+}
