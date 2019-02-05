@@ -1,3 +1,4 @@
-node_modules/**
-build_dev/**
-build_prod/**
+!**/*.js
+**/node_modules/**
+**/react-assets/**
+test-coverage/**

@@ -1,4 +1,7 @@
 import React from 'react';
+import { hot } from 'react-hot-loader/root';
+
+import './App.scss';
 
 const App = () => {
   const appTitle = 'This is a seed for a React project';
@@ -13,4 +16,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default hot(App);

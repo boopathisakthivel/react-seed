@@ -1,9 +1,10 @@
-/node_modules
-/build_dev
-/build_prod
-
 # IDE generated files
 .idea
+.vscode/
 
 # MAC OS generated files
 .DS_Store
+
+# Local files
+/node_modules
+/test-coverage

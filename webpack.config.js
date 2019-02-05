@@ -1,13 +1,22 @@
-const prodConfig = require('./webpack.config.prod');
-const devConfig = require('./webpack.config.dev');
+const reactTestProjectDev = require('./src/webpack-configurations/webpack.config.dev');
+
+process.traceDeprecation = true;
 
 module.exports = (env) => {
-  switch (env.BUILD_TYPE) {
-    case 'PRODUCTION':
-      return prodConfig;
-    case 'DEVELOPMENT':
+  if (!env) {
+    throw new Error('COULD NOT READ THE "env" VARIABLE');
+  }
+
+  switch (env.NODE_ENV) {
+    case 'development': {
+      const devConfig = reactTestProjectDev;
+      if (!devConfig) {
+        throw new Error('COULD NOT READ THE WEBPACK CONFIGURATION FOR THE "development" ENVIRONMENT');
+      }
+
       return devConfig;
+    }
     default:
-      return devConfig;
+      throw new Error('COULD NOT READ THE "env.NODE_ENV" VARIABLE');
   }
 };
