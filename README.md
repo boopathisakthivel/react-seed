@@ -63,15 +63,15 @@ Finds all '.test.ts' and '.test.tsx' files within the project and runs the tests
 
 ### <a id="npm-run-tslint-fix"></a>`npm run tslint:fix`
 
-Runs eslint on all '.ts' and '.tsx' files within the project, according to what is specified in .tslint.json.\
+Runs tslint on all '.ts' and '.tsx' files within the project, according to what is specified in .tslint.json.\
 Fixes the problems found.
 
 ### <a id="npm-run-tslint-log"></a>`npm run tslint:log`
 
-Runs eslint on all '.ts' and '.tsx' files within the project, according to what is specified in .tslint.json.\
+Runs tslint on all '.ts' and '.tsx' files within the project, according to what is specified in .tslint.json.\
 Logs the results.
 
 ### <a id="npm-run-type-check"></a>`npm run type-check`
 
-Runs scc on all '.ts' and '.tsx' files within the project, according to what is specified in .tsconfig.json.\
+Runs TypeScript type-checking on all '.ts' and '.tsx' files within the project, according to what is specified in .tsconfig.json.\
 Logs the results.
