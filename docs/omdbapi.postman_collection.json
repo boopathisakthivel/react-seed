@@ -1,0 +1,202 @@
+{
+	"variables": [],
+	"info": {
+		"name": "omdbapi",
+		"_postman_id": "c46a4597-f681-ee82-a365-0619782ad747",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "InvalidAPIKey",
+			"request": {
+				"url": {
+					"raw": "http://www.omdbapi.com/?s=asfasdfaskdfhaskfjaskdfasdf&apikey=4bb54623",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "asfasdfaskdfhaskfjaskdfasdf",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "apikey",
+							"value": "4bb54623",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SearchByID-Error",
+			"request": {
+				"url": {
+					"raw": "http://www.omdbapi.com/?i=tt65352061&apikey=4bb54623",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "tt65352061",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "apikey",
+							"value": "4bb54623",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetMovieByID - MinDetailsMovieID",
+			"request": {
+				"url": {
+					"raw": "http://www.omdbapi.com/?i=tt1819683&apikey=4bb54623",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "tt1819683",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "apikey",
+							"value": "4bb54623",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetMovieByID",
+			"request": {
+				"url": {
+					"raw": "http://www.omdbapi.com/?i=tt6535206&apikey=4bb54623",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "i",
+							"value": "tt6535206",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "apikey",
+							"value": "4bb54623",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "SearchMovie",
+			"request": {
+				"url": {
+					"raw": "http://www.omdbapi.com/?s=tamil&apikey=4bb54623&page=1",
+					"protocol": "http",
+					"host": [
+						"www",
+						"omdbapi",
+						"com"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "s",
+							"value": "tamil",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "apikey",
+							"value": "4bb54623",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "page",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
